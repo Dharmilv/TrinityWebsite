@@ -14,6 +14,7 @@ import EventsPage from './components/Events-page-components/EventsPage'
 import Sportspage from './components/Sports-page-components/Sports'
 import Cultural from './components/Cultural-page-component/Cultural'
 import Technical from './components/Technical-page-component/Technical'
+import { Theme } from './components/Theme/Theme'
 // import Deprev_cards from './components/Department_reveal-components/deprev_cards'
 // import Department_reveal from './components/Department-components/Department_reveal'
 
@@ -33,6 +34,7 @@ const App = () => {
 				<Route exact path='/sports' element={<Sportspage />} />
 				<Route exact path='/cultural' element={<Cultural />} />
 				<Route exact path='/technical' element={<Technical />} />
+				<Route exact path='/theme' element={<Theme />} />
 			</Routes>
 			<Socials />
 			<Footer />

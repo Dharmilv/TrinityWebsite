@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+
+/* Jal - IT */
+
+.jal{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-image: url('../../public/jalBg.png'); /* Replace with your image path */
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image in the container */
+    z-index: 1;
+    background-color: black;
+}
+
+.jalText{
+    font-size: 110px;
+    color: rgb(30, 144, 225);
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.department{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.jalImage{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jalImage img{
+    width: 70%;
+    height: 70%;
+}
+
+@media (max-width: 768px){
+    .jal{
+        flex-direction: column;
+    }
+}
+
+
+/* Prithvi- Allied */
+
+.prithvi{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-image: url('../../public/prithviBg.png'); /* Replace with your image path */
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image in the container */
+    z-index: 1;
+    background-color: black;
+}
+
+.prithviText{
+    font-size: 90px;
+    color: rgb(101, 225, 30);
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.prithviImage{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prithviImage img{
+    width: 70%;
+    height: 70%;
+}
+
+@media (max-width: 768px){
+    .prithvi{
+        flex-direction: column;
+    }
+}
+
+
+/* Vidyut - Mechanical */
+
+.vidyut{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-image: url('../../public/vidyutBg.png'); /* Replace with your image path */
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image in the container */
+    z-index: 1;
+    background-color: black;
+}
+
+.vidyutText{
+    font-size: 90px;
+    color: rgb(175, 21, 235);
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.vidyutImage{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vidyutImage img{
+    width: 70%;
+    height: 70%;
+}
+
+@media (max-width: 768px){
+    .vidyut{
+        flex-direction: column;
+    }
+}
+
+
+/* Agni - Computer Science */
+
+.agni{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-image: url('../../public/agniBg.png'); /* Replace with your image path */
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image in the container */
+    z-index: 1;
+    background-color: black;
+}
+
+.agniText{
+    font-size: 110px;
+    color: rgb(240, 8, 8);
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.agniImage{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agniImage img{
+    width: 70%;
+    height: 70%;
+}
+
+@media (max-width: 768px){
+    .agni{
+        flex-direction: column;
+    }
+}
+
+
+/* Vayu - EXTC */
+
+.vayu{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-image: url('../../public/vayuBg.png'); /* Replace with your image path */
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image in the container */
+    z-index: 1;
+    background-color: black;
+}
+
+.vayuText{
+    font-size: 110px;
+    color: rgb(146, 136, 136);
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.vayuImage{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vayuImage img{
+    width: 70%;
+    height: 70%;
+}
+
+@media (max-width: 768px){
+    .vayu{
+        flex-direction: column;
+    }
+}
+
+/* Samay - Data Science */
+
+.samay{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-image: url('../../public/samayBg.png'); /* Replace with your image path */
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image in the container */
+    z-index: 1;
+    background-color: black;
+}
+
+.samayText{
+    font-size: 110px;
+    color: rgb(239, 233, 61);
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.samayImage{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.samayImage img{
+    width: 70%;
+    height: 70%;
+}
+
+@media (max-width: 768px){
+    .samay{
+        flex-direction: column;
+    }
+}

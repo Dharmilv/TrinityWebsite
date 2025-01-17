@@ -34,7 +34,12 @@
 .nav-content {
 	color: white;
 	height: 60px;
-	margin-right: 15%;
+	margin-right: 3%;
+}
+
+.navbar-nav{
+	display: flex;
+
 }
 
 .image img {

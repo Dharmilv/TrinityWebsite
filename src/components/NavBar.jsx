@@ -91,6 +91,11 @@ function NavBar() {
 								</NavLink>
 							</li>
 							<li>
+								<NavLink to='/theme' onClick={() => setExpanded(false)}>
+									Theme
+								</NavLink>
+							</li>
+							<li>
 								<NavLink to='/contact' onClick={() => setExpanded(false)}>
 									Contact Us
 								</NavLink>
