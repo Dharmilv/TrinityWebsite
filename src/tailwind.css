@@ -1,0 +1,103 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+body {
+    @apply text-[white] bg-[url('../assets/8.png')] bg-no-repeat fixed w-screen h-screen bg-cover bg-center;
+  }
+  .registration {
+    @apply flex flex-col justify-center items-center;
+  }
+  .blocks {
+    @apply flex flex-row justify-center items-center gap-60;
+  }
+  .register {
+    @apply w-[500px] h-[500px] gap-0 opacity-[0px] shadow-[-10px_11px_6.4px_0px_rgba(13,37,31,1)] justify-items-center justify-center rounded-[45px] border-2 border-[0px_0px] border-solid border-[rgba(243,255,207,0.32)] left-[117px] top-[183px];
+    background: linear-gradient(
+      134.68deg,
+      rgba(0, 0, 0, 0.49) 4.79%,
+      rgba(118, 114, 114, 0.49) 47.7%,
+      rgba(5, 5, 5, 0.49) 90.6%
+    );
+  }
+  .contact {
+    @apply w-[500px] h-[500px] gap-0 opacity-[0px] shadow-[69px_18px_0px_0px_rgba(0,0,0,0.25)] text-sm flex flex-col justify-center items-center rounded-[45px] left-[1022px] top-[183px];
+    background: rgba(248, 254, 253, 0.15);
+  }
+  .contact iframe {
+    @apply mt-[30px];
+  }
+  .details {
+    @apply flex flex-row w-full h-full justify-around p-5;
+  }
+  .details i {
+    @apply text-[25px] text-[white];
+  }
+  .phone {
+    @apply flex flex-col leading-[0] items-center;
+    justify-content: left;
+  }
+  .social {
+    @apply flex flex-col cursor-pointer gap-12;
+    justify-content: right;
+  }
+  .social p {
+    @apply text-[white] leading-[0%] justify-end;
+  }
+  .footer {
+    @apply flex flex-row justify-between w-full items-end px-5 py-2.5;
+    /* Ensures all children align at the bottom */
+    /* Optional: Adds padding for better layout */
+  }
+  .footer .icons {
+    @apply flex flex-row gap-2.5;
+    /* Adds space between icons */
+  }
+  .footer i {
+    @apply text-xl leading-[0] text-[white] m-2.5;
+  }
+  .footer .text {
+    @apply flex items-end text-right text-sm text-[white];
+    /* Aligns text to the bottom of the container */
+    /* Optional: Aligns text to the right */
+    /* Ensures text color is visible */
+  }
+  .register-form {
+    @apply flex flex-col gap-4 max-w-[350px] justify-center items-center m-10 p-5 rounded-[20px];
+  }
+  .name-inputs {
+    @apply grid grid-cols-[1fr_2fr_2fr] gap-2 w-full;
+    /* Adjusts proportions for 'Mr', 'First Name', and 'Surname' */
+    /* Ensures alignment with other inputs */
+  }
+  .register-form input,
+  .register-form select {
+    @apply w-full box-border border text-[white] text-sm transition-[background-color] duration-[0.3s] ease-[ease] px-[15px] py-2.5 rounded-[20px] border-solid border-[rgba(37,48,4,0.32)];
+    /* Ensures all inputs have uniform width */
+    /* Includes padding in the width calculation */
+    background: rgba(217, 217, 217, 0.2);
+    outline: none;
+  }
+  .register-form input::placeholder,
+  .register-form select option {
+    @apply text-[rgba(255,255,255,0.7)];
+  }
+  .register-form input:focus,
+  .register-form select:focus {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .name-inputs select {
+    @apply text-[100px];
+  }
+  .name-inputs select,
+  .name-inputs input {
+    @apply w-full border text-[white] text-sm transition-[background-color] duration-[0.3s] ease-[ease] border px-[15px] py-2.5 rounded-[20px] border-solid border-[rgba(37,48,4,0.32)];
+    /* Ensures each field fits its grid column */
+    background: rgba(217, 217, 217, 0.2);
+  }
+  .register-button {
+    @apply text-[black] cursor-pointer font-[bold] transition-transform duration-[0.2s] w-6/12 shadow-[5px_8px_4px_0px_rgba(0,0,0,0.25)] text-[black] transition-transform duration-[0.2s] px-5 py-3 rounded-[50px] border-[none] hover:scale-105 active:scale-100;
+    background: linear-gradient(90deg, #36ebff 0%, #cef3ff 100%);
+  }
+  
