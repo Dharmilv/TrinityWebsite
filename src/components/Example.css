@@ -1,0 +1,83 @@
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  
+  .horizontal-scroll-section {
+    position: relative;
+    height: 220vh;
+    margin: 0;
+    padding: 0;
+  }
+  .example-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Remove default gap between sections */
+  }
+
+  .sticky-container {
+    position: relative;
+    display: flex;
+    height: 100vh;
+  }
+  
+  .text-container {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f1f1f1;
+  }
+  
+  .images-container {
+    width: 66.66%;
+    overflow: hidden;
+  }
+  
+  
+  .images-wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+    padding: 0 16px;
+  }
+
+  .image-item {
+    height: 350px;
+    width: 350px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #d1d1d1;
+  }
+  
+  .image-background {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.9s ease;
+  }
+  
+  .image-item:hover .image-background {
+    transform: scale(1.1);
+  }
+  
+
+  
