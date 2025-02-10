@@ -75,7 +75,7 @@ export default function Sponsors() {
 
       <main className="pt-24 px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-[#c5ff7c] text-6xl font-bold mb-4">Our Sponsors</h1>
+          <h1 className="text-4xl sm:text-4xl md:text-5xl text-yellow-300 font-bold mt-0">Our Sponsors</h1>
           <p className="text-white text-xl">
             Our sponsors are the heroes behind the scenes.
             <br />

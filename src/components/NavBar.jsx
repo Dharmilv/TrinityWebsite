@@ -37,7 +37,7 @@ function NavBar() {
       collapseOnSelect
       expand="lg"
       className={`sticky-top bg-black  ${
-        isScrolled ? "bg-opacity-50 backdrop-blur-md" : "bg-gray-900"
+        isScrolled ? "bg-opacity-100 backdrop-blur-md" : "bg-gray-900"
       }`}
       variant="dark"
     >
@@ -69,7 +69,7 @@ function NavBar() {
             </NavLink>
             <NavLink
               className="nav-link mx-3"
-              to="/team"
+              to="/leaderboard"
               onClick={() => setExpanded(false)}
             >
               Leaderboard
@@ -122,7 +122,7 @@ function NavBar() {
               to="/contact"
               onClick={() => setExpanded(false)}
             >
-              Contact Us
+              Register
             </NavLink>
           </Nav>
         </Navbar.Collapse>

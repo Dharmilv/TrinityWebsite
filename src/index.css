@@ -60,7 +60,7 @@
 	justify-content: center; /* Center the links horizontally */
 	align-items: center; /* Vertically center the links */
 	font-family: "Anek Latin";
-	font-size: 23px;
+	font-size: 25px;
 }
 
 .nav-links li a {
@@ -73,12 +73,12 @@
 
 
 .active {
-	background-color: #032c3fb9;
+	background-color: #033845c7;
 }
 
 .img {
 	width: 100%;
-	margin-top: -150px;
+	margin-top: -100px;
 	/* object-fit: cover; */
 	opacity: 0.93;
 	margin-bottom: -130px;

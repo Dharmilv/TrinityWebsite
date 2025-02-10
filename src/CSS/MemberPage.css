@@ -137,8 +137,9 @@
 /* Root and theme variables */
 /* Root and theme variables */
 :root {
-    --themeColor: rgb(161, 159, 41);
-}
+    --themeColor: rgba(186, 184, 63, 1);
+  }
+  
 
 /* Container with background image */
 .members-page-container {
@@ -156,10 +157,12 @@
 /* Page title */
 .page-title {
     font-family: "Anek Latin";
-    font-weight: 600;
-    font-size: 2.5rem;
-    color: var(--themeColor);
+    font-weight: 700;
+    color:rgba(186, 184, 63, 1);
+    font-size: 2.5rem; /* Default size */
+    margin-top: 0; /* Equivalent to mt-0 */
     margin-bottom: 2rem;
+
 }
 
 /* Each section container */

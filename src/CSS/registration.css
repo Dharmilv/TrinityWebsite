@@ -1,0 +1,201 @@
+.registration {
+    display: flex;
+    background-image: url('../images/8.png');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  .blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .register,
+  .contact {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    padding: 30px;
+    border-radius: 45px;
+    background: rgba(248, 254, 253, 0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(243, 255, 207, 0.32);
+    box-shadow: -10px 11px 6.4px 0px rgba(13, 37, 31, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .register {
+    background: linear-gradient(134.68deg, rgba(0, 0, 0, 0.49) 4.79%, rgba(118, 114, 114, 0.49) 47.7%, rgba(5, 5, 5, 0.49) 90.6%);
+  }
+  
+  .contact {
+    background: rgba(248, 254, 253, 0.15);
+    box-shadow: 69px 18px 0px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 550px;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .name-inputs {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 2fr;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  
+  .register-form input,
+  .register-form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: rgba(25, 1, 1, 0.2);
+    border: 1px solid rgba(37, 48, 4, 0.32);
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-form input::placeholder,
+  .register-form select option {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .register-form input:focus,
+  .register-form select:focus {
+    background: rgba(17, 52, 51, 0.5);
+  }
+  
+  .register-button {
+    background: linear-gradient(90deg, #36EBFF 0%, #CEF3FF 100%);
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+    border: none;
+    padding: 12px 20px;
+    width: 50%;
+    box-shadow: 5px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    margin-top: 10px;
+  }
+  
+  .register-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .register-button:active {
+    transform: scale(1);
+  }
+  
+  .contact iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: row;
+    
+    font-family: "Anek Latin";
+    background: none;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+    gap: 1rem;
+  }
+  
+  .phone,
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .phone p,
+  .social p {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .social a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social a:hover {
+    color: #36EBFF;
+  }
+ 
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .blocks {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .register,
+    .contact {
+      width: 100%;
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    .name-inputs {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .footer {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .register-form {
+      padding: 10px;
+    }
+  
+    .name-inputs {
+      grid-template-columns: 1fr;
+    }
+  
+    .register-button {
+      width: 100%;
+    }
+  }

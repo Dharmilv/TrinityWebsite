@@ -1,9 +1,41 @@
-/* General styling for the body */
+General styling for the body
 body {
     margin: 0;
     font-family: 'Anek Latin', sans-serif;
 }
+/* Container for the carousel */
+.carousel-container {
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px 0;
+}
 
+/* Carousel item container */
+.carousel-item {
+  width: 100%;
+  height: 500px; /* Fixed height for all carousel items */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures content doesn't overflow */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+/* Styling for images and videos */
+.carousel-item img,
+.carousel-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the media covers the container while maintaining aspect ratio */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 300px; /* Smaller height for mobile devices */
+  }
+}
 /* Container for full-screen sections */
 .section {
     width: 100%;
@@ -30,11 +62,12 @@ body {
 }
 
 .about-section {
+    background-image: url('../images/3.png');
+
     text-align: left;
 }
 
 .principal-section {
-    background-color: black;
     text-align: justify;
 }
 
