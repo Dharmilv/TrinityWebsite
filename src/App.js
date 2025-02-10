@@ -14,13 +14,7 @@ import Technical from './components/Technical-page-component/Technical';
 import HomePage from './components/HomePage/Home';
 
 const App = () => {
-  useEffect(() => {
-    if (window.location.pathname === "/") {
-      // Redirect to homepage.html located in public/
-      window.location.href = "/homepage.html";
-    }
-  }, []);
-
+ 
   return (
     <>
       <Navbar />

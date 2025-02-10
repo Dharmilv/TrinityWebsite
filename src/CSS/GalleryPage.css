@@ -1,13 +1,13 @@
 :root {
-    --themeColor: rgb(255, 255, 255);
+    --themeColor: rgba(186, 184, 63, 1);
 }
-
+/* 
 .gallery-main-container {
-    background-image: linear-gradient(rgb(0, 0, 0), #063138);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../resources/images/gallery_page_background.avif");
     background-size: cover;
     min-height: 100vh;
     padding: 0 2%;
-    background-size: cover;
+    
     background-attachment: fixed;
     background-position: top;
     position: relative;
@@ -21,9 +21,6 @@
     margin-bottom: 10px;
     justify-content: center;
 }
-
-
-
 
 .photos-container {
     display: flex;
@@ -92,7 +89,7 @@
 
 
 .Carousel-item {
-    background-color: rgb(0, 0, 0);
+    background-color: gray;
     width: 30rem;
     height: 15rem;
     border-radius: 10px;
@@ -105,11 +102,237 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+} */
+
+/* -----------------------------------------------New CSS---------------------------------- */
+
+.new-gallery-page {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../resources/images/gallery_page_background.png");
+    background-size:cover;
+    background-color: black;
+    background-position: center;
+}
+
+.new-gallery-page h1 {
+    color:white;
+    margin:auto;
+    padding-top: 2rem;
+}
+
+.new-gallery-page h4 {
+    color:white;
+    margin:auto;
+    line-height: normal;
+    padding-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+   
+}
+
+.image-collage {
+    display: grid;
+    place-items: center;  /* Centers the grid content */
+    padding: 3rem 0;
+    width: 100%;
+}
+
+.long-img {
+    background-color: grey;  /* Just a sample background color */
+    color: white;  /* Text color */
+    /* padding: 20px;  Add padding inside the grid item */
+    border-radius: 8px;  /* Optional rounded corners */
+    text-align: center;  /* Center the text */
+    height: 31rem;  /* Set a height to make the items visible */
+    display: flex;  /* Use flexbox to center content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Styling for each grid item */
+.grid-item {
+    background-color: grey;  /* Just a sample background color */
+    color: white;  /* Text color */
+    /* padding: 20px;  Add padding inside the grid item */
+    border-radius: 8px;  /* Optional rounded corners */
+    text-align: center;  /* Center the text */
+    height: 15rem;  /* Set a height to make the items visible */
+    display: flex;  /* Use flexbox to center content vertically and horizontally */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Container for the grid */
+.grid-container1 {
+    display: grid;  /* Set the grid layout */
+    grid-template-columns: 60% 20% 20%;  /* Define three columns with specified widths */
+    gap: 1rem;  /* Space between columns */
+    width: 90%;  /* Ensure it takes full width */
+    padding: 0.5rem 1rem;  
+}
+
+.grid-container2 {
+    display: grid;  /* Set the grid layout */
+    grid-template-columns: 35% 65%;  /* Define three columns with specified widths */
+    gap: 1rem;  /* Space between columns */
+    width: 90%;  /* Ensure it takes full width */
+    padding: 0.5rem 1rem;  
+}
+
+.grid-container3 {
+    display: grid;  /* Set the grid layout */
+    grid-template-columns: 20% 20% 20% 40%;  /* Define three columns with specified widths */
+    gap: 1rem;  /* Space between columns */
+    width: 90%;  /* Ensure it takes full width */
+    padding: 0.5rem 1rem;  /* Optional padding */
+}
+
+.albums-container {
+    /* padding-top: 3rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.album {
+    margin: 0 4rem;
+    width: 18rem;
+    height: 18rem;
+    border: 0.3rem solid rgb(0, 0, 0);
+    border-radius: 2rem;
+    box-shadow: 20px 25px rgb(224, 224, 224);
+    /* background-color: rgb(0, 0, 0); */
+    position: relative; /* Ensure relative positioning for absolute elements */
+    overflow: hidden;
+}
+
+.album img {
+    width: 100%;  /* Ensure it fills the container */
+    height: 100%;
+    object-fit: cover; /* Keep aspect ratio and fill */
+    /* border-radius: inherit; */
+}
+
+.album h6 {
+    position: absolute;
+    bottom: 10px; /* Adjust to position text at the bottom of the image */
+    left: 50%; 
+    transform: translateX(-50%); /* Center text horizontally within the album */
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    /* background: rgba(0, 0, 0, 0.6); Add background for readability */
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: fit-content;
+    text-align: center;
+}
+
+
+
+
+.divider {
+    height: 5rem;
 }
 
 
 
 @media only screen and (max-width: 600px) {
+
+    .album {
+        margin: 2rem 4rem;
+        width: 20rem;
+        height: 20rem;
+        border: 0.3rem solid rgb(0, 0, 0);
+        border-radius: 2rem;
+        box-shadow: 10px 15px rgb(224, 224, 224);
+        /* background-color: rgb(0, 0, 0); */
+        position: relative; /* Ensure relative positioning for absolute elements */
+        overflow: hidden;
+    }
+
+    
+    .new-gallery-page h4 {
+        color:white;
+        margin:auto;
+        padding: 2rem 1.5rem;
+        font-size: small;
+        line-height: normal;
+        text-align: center;
+    }
+
+    .image-collage {
+        display: grid;
+        place-items: center;  /* Centers the grid content */
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    
+.long-img {
+    background-color: grey;  /* Just a sample background color */
+    color: white;  /* Text color */
+    /* padding: 20px;  Add padding inside the grid item */
+    border-radius: 8px;  /* Optional rounded corners */
+    text-align: center;  /* Center the text */
+    height: 10.5rem;  /* Set a height to make the items visible */
+    display: flex;  /* Use flexbox to center content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Styling for each grid item */
+.grid-item {
+    background-color: grey;  /* Just a sample background color */
+    color: white;  /* Text color */
+    /* padding: 20px;  Add padding inside the grid item */
+    border-radius: 8px;  /* Optional rounded corners */
+    text-align: center;  /* Center the text */
+    height: 5rem;  /* Set a height to make the items visible */
+    display: flex;  /* Use flexbox to center content vertically and horizontally */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Container for the grid */
+.grid-container1 {
+    display: grid;  /* Set the grid layout */
+    grid-template-columns: 50% 25% 25%;  /* Define three columns with specified widths */
+    gap: 0.5rem;  /* Space between columns */
+    width: 90%;  /* Ensure it takes full width */
+    /* padding: 20px;  Optional padding */
+}
+
+.grid-container2 {
+    display: grid;  /* Set the grid layout */
+    grid-template-columns: 35% 65%;  /* Define three columns with specified widths */
+    gap: 0.5rem;  /* Space between columns */
+    width: 90%;  /* Ensure it takes full width */
+    /* padding: 20px;  Optional padding */
+}
+
+.grid-container3 {
+    display: grid;  /* Set the grid layout */
+    grid-template-columns: 20% 20% 20% 40%;  /* Define three columns with specified widths */
+    gap: 0.5rem;  /* Space between columns */
+    width: 90%;  /* Ensure it takes full width */
+    /* padding: 20px;  Optional padding */
+}
+/* 
     .rec-arrow-right {
         display: none;
 
@@ -165,9 +388,9 @@
         display: block;
         margin: 10px;
         width: 80%;
-        height: 20%;
+        height: 20%; */
 
-    }
+    /* } */
 
 
 
