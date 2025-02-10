@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --themeColor: rgb(161, 159, 41);
 }
 
@@ -87,7 +87,6 @@
     border-radius: 10px;
     height: 14rem;
     width: 13rem;
-    transform: scale(1);
     object-fit: cover;
     bottom: 20px;
 }
@@ -124,7 +123,6 @@
         border-radius: 10px;
         height: 14rem;
         width: 12rem;
-        transform: scale(1.2);
         object-fit: cover;
         bottom: 20px;
     }
@@ -133,5 +131,166 @@
         height: 10rem;
         width: 95vw;
 
+    }
+} */
+
+/* Root and theme variables */
+/* Root and theme variables */
+:root {
+    --themeColor: rgb(161, 159, 41);
+}
+
+/* Container with background image */
+.members-page-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-image: url("../resources/images/members_page_background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    overflow-x: hidden;
+}
+
+/* Page title */
+.page-title {
+    font-family: "Anek Latin";
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--themeColor);
+    margin-bottom: 2rem;
+}
+
+/* Each section container */
+.section-container {
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    flex-wrap: wrap; /* Allow wrapping for mobile screens */
+}
+
+/* Section title on the left */
+.text-container {
+    width: 270px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #f4f4f4; */
+    /* border: 3px solid var(--themeColor); */
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: sticky;
+    left: 0;
+}
+
+.section-title {
+    font-family: "Anek Latin";
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #98962a;
+    padding: 10px;
+}
+
+/* Horizontal scroll container for images */
+.images-container {
+    width: calc(100% - 300px);
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Flex container for the images */
+.images-wrapper {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+    width: max-content;
+}
+
+/* Image card styling */
+.image-item {
+    flex: 0 0 auto;
+    width: 270px;
+    height: 270px;
+    border-radius: 16px;
+    background-color: #d1d1d1;
+    overflow: hidden;
+}
+
+/* Background image within each image item */
+.image-background {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.9s ease;
+}
+
+/* Zoom effect on hover */
+.image-item:hover .image-background {
+    transform: scale(1.1);
+}
+
+/* Optional: Style for horizontal scrollbar */
+.images-container::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+.images-container::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 4px;
+}
+
+/* Responsive styles for mobile screens */
+@media only screen and (max-width: 600px) {
+    .members-page-container {
+        padding: 10px;
+    }
+
+    .page-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .text-container {
+        width: 200px;
+        height: 200px;
+        position: relative; /* Remove sticky positioning */
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .images-container {
+        width: 100%;
+    }
+
+    .images-wrapper {
+        gap: 10px;
+    }
+
+    .image-item {
+        width: 200px;
+        height: 200px;
+    }
+
+    .image-background {
+        transition: transform 0.8s ease; /* Keep effects smooth */
+    }
+
+    .image-item:hover .image-background {
+        transform: scale(1.1); /* Retain hover effect */
     }
 }

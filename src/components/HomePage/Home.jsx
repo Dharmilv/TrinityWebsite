@@ -17,8 +17,8 @@ import video1 from "../../images/HomePage/video1.mov";
 
 const HomePage = () => {
   const mediaItems = [
-    { type: "video", src: video1 },
     { type: "image", src: img1 },
+    { type: "video", src: video1 },
     { type: "image", src: img2 },
     { type: "image", src: img3 },
     { type: "image", src: img4 },
